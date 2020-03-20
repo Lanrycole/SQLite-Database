@@ -98,6 +98,11 @@ public class DatabaseHandler extends SQLiteOpenHelper {
 		}
 		return contactList;
 	}
-
+public int getCount(){
+		String select = "SELECT * FROM "+ Util.TABLE_NAME +"";
+		SQLiteDatabase db = this.getReadableDatabase();
+		Cursor cursor = db.rawQuery(select, null);
+		return cursor.getCount();
+}
 
 }

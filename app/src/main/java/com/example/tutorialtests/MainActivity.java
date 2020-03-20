@@ -33,10 +33,10 @@ public class MainActivity extends AppCompatActivity {
 //		databaseHandler.addContact(nike);
 //		databaseHandler.addContact(lanre);
 
-		databaseHandler.upDateContact(lanre);
+//		databaseHandler.upDateContact(lanre);
 
 
-			Log.d("CONTACTS","onCreate: " + databaseHandler.getAllContact());
+			Log.d("CONTACTS","onCreate: " + databaseHandler.getCount());
 
 
 	}
